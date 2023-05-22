@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+float salario;
+float aumento;
+float novosalario;
+float reajuste;
+
+int main()
+{
+    do{    
+        
+        printf("Digite salario atual ou 0 para encerrar: \n");
+        scanf("%f", &salario);
+        
+         if(salario==0){
+            break;
+        }
+        
+        printf("Digite a porcentagem de aumento: \n");
+        scanf("%f",&aumento);
+        
+        reajuste = salario * (aumento/100);
+        novosalario = salario+reajuste;
+        
+        printf("O salário reajustado é:%.2f\n", novosalario);
+    }while(1);
+    return 0;
+}
