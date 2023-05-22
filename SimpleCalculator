@@ -1,0 +1,64 @@
+#include <stdio.h>
+  int valor1;
+  int valor2;
+  int soma;
+  int sub;
+  float divi;
+  int multi;
+  int sinal;
+  
+int main()
+{
+      while(1){
+         printf("Defina a operação:\n""1.+\n""2.-\n""3./\n""4.x\n""0.sair\n");
+         scanf("%d", &sinal);
+         
+         
+        if(sinal == 1){  
+            printf("Defina o primeiro valor: " );
+            scanf("%d", &valor1);
+            
+            printf("Defina o segundo valor: ");
+            scanf("%d", &valor2);
+            
+            soma = valor1 + valor2;
+            printf("O resutlado da soma é:%d ",soma);
+             
+        }else if(sinal == 2){
+            printf("Defina o primeiro valor: " );
+            scanf("%d", &valor1);
+            
+            printf("Defina o segundo valor: " );
+            scanf("%d", &valor2);
+            
+            sub = valor1 - valor2;
+            printf("O resutlado da subtração é: %d\n ",sub);
+        }else if(sinal == 3){
+            printf("Defina o primeiro valor: " );
+            scanf("%d", &valor1);
+            
+            printf("Defina o segundo valor: " );
+            scanf("%d", &valor2);
+            
+            divi= valor1 / valor2;
+            printf("O resutlado da divisão é: %f\n ",divi);
+        }else if(sinal == 4){
+            printf("Defina o primeiro valor: " );
+            scanf("%d", &valor1);
+            
+            printf("Defina o segundo valor: " );
+            scanf("%d", &valor2);
+            
+            multi = valor1 * valor2;
+            printf("O resutlado da multiplicação é: %d\n ",multi);
+        } else if(sinal == 0){
+            break;
+        } else{
+            printf("Digite uma opção válida\n");
+        }
+          
+          
+           
+    
+    }
+}
